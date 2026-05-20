@@ -1,0 +1,62 @@
+[
+  {
+    "sku": "ZK-THAI-001",
+    "recipe_name": "Thai Green Curry",
+    "region": "Southeast Asia",
+    "key_spices": ["Green Chile", "Lemongrass", "Galangal", "Makrut Lime Leaf", "Coriander Seed", "Cumin", "White Pepper"],
+    "prep_time": 15,
+    "difficulty": "Medium",
+    "supplier_cost": 1.15,
+    "retail_price": 5.99,
+    "inventory_count": 500,
+    "description": "A vibrant, aromatic spice blend capturing the authentic málà balance with premium milled galangal and citrusy makrut lime leaves."
+  },
+  {
+    "sku": "ZK-MOR-002",
+    "recipe_name": "Moroccan Chicken Tagine",
+    "region": "North Africa",
+    "key_spices": ["Sweet Paprika", "Cumin", "Ginger", "Turmeric", "Cinnamon", "Black Pepper", "Saffron"],
+    "prep_time": 10,
+    "difficulty": "Easy",
+    "supplier_cost": 1.45,
+    "retail_price": 5.99,
+    "inventory_count": 450,
+    "description": "An earthy, warm, and sweet spice combination featuring authentic Moroccan saffron and ground ginger for rich, slow-braised complexity in 20 minutes."
+  },
+  {
+    "sku": "ZK-SZE-003",
+    "recipe_name": "Szechuan Mapo Tofu",
+    "region": "East Asia",
+    "key_spices": ["Sichuan Peppercorns", "Dried Red Chiles", "White Sesame Seeds", "Five-Spice Powder"],
+    "prep_time": 10,
+    "difficulty": "Medium",
+    "supplier_cost": 0.95,
+    "retail_price": 5.99,
+    "inventory_count": 400,
+    "description": "A fiery, tongue-numbing \"málà\" seasoning mix featuring hand-selected Grade A coarse-ground red Sichuan peppercorns."
+  },
+  {
+    "sku": "ZK-IND-004",
+    "recipe_name": "Indian Butter Chicken",
+    "region": "South Asia",
+    "key_spices": ["Kashmiri Chili", "Garam Masala", "Coriander", "Kasuri Methi", "Cardamom"],
+    "prep_time": 10,
+    "difficulty": "Easy",
+    "supplier_cost": 1.20,
+    "retail_price": 5.99,
+    "inventory_count": 600,
+    "description": "A highly concentrated, deeply aromatic spice blend featuring vibrant red Kashmiri chili and sweet, fragrant green cardamom."
+  },
+  {
+    "sku": "ZK-MEX-005",
+    "recipe_name": "Mexican Al Pastor Tacos",
+    "region": "Latin America",
+    "key_spices": ["Achiote Powder", "Guajillo Chile", "Pasilla Chile", "Mexican Oregano", "Garlic Powder", "Cumin"],
+    "prep_time": 15,
+    "difficulty": "Easy",
+    "supplier_cost": 0.85,
+    "retail_price": 5.99,
+    "inventory_count": 350,
+    "description": "An authentic al pastor dry rub with rich achiote and rehydrated chile notes for a perfect street-taco char in under 15 minutes."
+  }
+]
