@@ -3,71 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZestRoute | Global Flavors, Zero Waste</title>
+    <title>ZestRoute | Precise Spice Engineering for Adventurous Cooks</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="container">
-        <nav>
-            <div class="logo">ZestRoute</div>
-        </nav>
+    <div class="dot-pattern"></div>
+    
+    <header class="border-b">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-accent">&lt;</span>ZESTROUTE<span class="logo-accent"> /&gt;</span>
+            </div>
+            <div class="system-status">
+                <span class="status-indicator"></span>
+                <span class="status-text">SYSTEM ACTIVE: LAUNCH_BETA_2026</span>
+            </div>
+        </div>
     </header>
 
     <main>
+        <!-- Hero Section -->
         <section class="hero container">
             <div class="hero-content">
-                <span class="badge">Coming June 2026</span>
-                <h1>Master international dinners in <span class="accent">20 minutes</span>.</h1>
-                <p class="lead">Pre-portioned spice kits for the adventurous, time-pressed cook. No half-used jars, no measuring, just world-class flavor delivered to your door.</p>
+                <div class="terminal-badge">
+                    <span class="badge-tag">VERSION</span>
+                    <span class="badge-val">1.0.0-BETA</span>
+                </div>
+                <h1>PRECISE SPICE ENGINEERING FOR MODERN COOKING.</h1>
+                <p class="lead">Stop buying entire glass jars of single-origin spices that expire in your pantry. ZestRoute ships precise, pre-portioned, single-origin international dry spice kits paired with 30-minute streamlined recipes. Pure culinary efficiency.</p>
                 
-                <form id="waitlist-form" class="signup-form">
-                    <div class="input-group">
-                        <input type="email" id="email" placeholder="Enter your email" required>
-                        <button type="submit" id="submit-btn">Get Early Access</button>
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="terminal-title">waitlist_init.sh</div>
                     </div>
-                    <p class="form-help">Join <span id="signup-count">...</span> others waiting for the first box.</p>
-                    <div id="form-message" class="hidden"></div>
-                </form>
+                    <div class="terminal-body">
+                        <p class="terminal-prompt">$ ./join_waitlist.sh --invite-code=2026</p>
+                        <form id="waitlist-form" class="signup-form">
+                            <div class="input-group">
+                                <span class="input-prefix">email:</span>
+                                <input type="email" id="email" placeholder="cook@modernkitchen.io" required autocomplete="off">
+                                <button type="submit" id="submit-btn">EXECUTE()</button>
+                            </div>
+                            <div class="counter-display">
+                                <span class="counter-label">MEMBERS_COMMITTED:</span>
+                                <span class="counter-val" id="signup-count">...</span>
+                            </div>
+                            <div id="form-message" class="hidden"></div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="images/overhead-editorial-photography-of-a-zest.png" alt="ZestRoute Spice Kit with recipe card and compostable sachets">
+            <div class="hero-visual">
+                <div class="image-wrapper">
+                    <img src="images/overhead-editorial-photography-of-a-zest.png" alt="ZestRoute Spice Kit with recipe card and compostable sachets">
+                    <div class="image-overlay-tech">
+                        <div class="tech-corner tl"></div>
+                        <div class="tech-corner tr"></div>
+                        <div class="tech-corner bl"></div>
+                        <div class="tech-corner br"></div>
+                        <div class="overlay-spec">[ SKU: ZR-STARTER-KIT ]</div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="features">
-            <div class="container grid">
-                <div class="feature-card">
-                    <div class="icon">01</div>
-                    <h3>Zero Waste</h3>
-                    <p>Stop buying full jars of spices you'll only use once. Our kits contain the exact portions needed for one recipe.</p>
+        <!-- Product Catalog Section -->
+        <section class="catalog-section border-y">
+            <div class="container">
+                <div class="section-header-mono">
+                    <span class="section-num">01 //</span>
+                    <h2>THE INITIAL COMPILER MENU</h2>
+                    <p class="section-desc">Five highly-optimized launch recipes. Click on a recipe to compile its key active ingredients and spice parameters.</p>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">02</div>
-                    <h3>20-Min Meals</h3>
-                    <p>Designed for busy weeknights. Every recipe is optimized for speed without sacrificing authentic global taste.</p>
+
+                <div class="catalog-grid">
+                    <!-- Cards will be populated or styled elegantly -->
+                    <div class="recipe-card active" data-sku="ZK-THAI-001">
+                        <div class="card-num">01</div>
+                        <h3>Thai Green Curry</h3>
+                        <p class="card-desc">Vibrant green chiles with fresh lemongrass and galangal root. Eliminates 20 mins of pounding herbs.</p>
+                        <div class="card-meta">
+                            <span>TIME: 15 MINS</span>
+                            <span>DIFFICULTY: MED</span>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-sku="ZK-MOR-002">
+                        <div class="card-num">02</div>
+                        <h3>Moroccan Tagine</h3>
+                        <p class="card-desc">Earthy saffron and ginger notes optimized for high-temperature skillet braising.</p>
+                        <div class="card-meta">
+                            <span>TIME: 10 MINS</span>
+                            <span>DIFFICULTY: EASY</span>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-sku="ZK-SZE-003">
+                        <div class="card-num">03</div>
+                        <h3>Szechuan Mapo Tofu</h3>
+                        <p class="card-desc">Hand-selected Grade A red Sichuan peppercorns for authentic mouth-numbing málà sensation.</p>
+                        <div class="card-meta">
+                            <span>TIME: 10 MINS</span>
+                            <span>DIFFICULTY: MED</span>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-sku="ZK-IND-004">
+                        <div class="card-num">04</div>
+                        <h3>Indian Butter Chicken</h3>
+                        <p class="card-desc">Highly concentrated Kashmiri chili and green cardamom blooming instantly in hot butter.</p>
+                        <div class="card-meta">
+                            <span>TIME: 10 MINS</span>
+                            <span>DIFFICULTY: EASY</span>
+                        </div>
+                    </div>
+
+                    <div class="recipe-card" data-sku="ZK-MEX-005">
+                        <div class="card-num">05</div>
+                        <h3>Mexican Al Pastor</h3>
+                        <p class="card-desc">Rich achiote and guajillo powder. Recreates deep marinades in a quick street-taco style.</p>
+                        <div class="card-meta">
+                            <span>TIME: 15 MINS</span>
+                            <span>DIFFICULTY: EASY</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="icon">03</div>
-                    <h3>Single-Origin</h3>
-                    <p>We source directly from smallholder farmers. Fresh-ground, high-transparency spices that pop with flavor.</p>
+
+                <div class="terminal-inspector">
+                    <div class="inspector-header">
+                        <span class="tab active">SPECIFICATION</span>
+                        <span class="tab">COGS_ANALYSIS</span>
+                    </div>
+                    <div class="inspector-body" id="recipe-spec-viewer">
+                        <!-- Loaded dynamically via JavaScript -->
+                        <div class="spec-loading">Select a recipe above to inspect its parameters.</div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="social-proof container">
-            <h2>The "First Box for $5" Beta</h2>
-            <p>Our initial launch is limited to 500 subscribers. Sign up for the waitlist today to lock in your invitation to the Beta program when we go live.</p>
+        <!-- System Architecture Section -->
+        <section class="architecture container">
+            <div class="section-header-mono">
+                <span class="section-num">02 //</span>
+                <h2>SYSTEM ARCHITECTURE & EFFICIENCY</h2>
+                <p class="section-desc">Why traditional spice jars are a legacy format and how ZestRoute optimizes your cooking experience.</p>
+            </div>
+
+            <div class="arch-grid">
+                <div class="arch-card">
+                    <div class="arch-icon">&lt;01&gt;</div>
+                    <h4>Pantry Storage Optimization</h4>
+                    <p>Standard retail jars hold ~2.5oz of spices, but average home cooks use less than 0.2oz before they oxidize and lose aromatic volatility. ZestRoute uses hermetically sealed, nitrogen-flushed compostable sachets for zero oxidation and zero physical cabinet bloat.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">&lt;02&gt;</div>
+                    <h4>Zero-Lag Sourcing Protocol</h4>
+                    <p>All spices are direct-trade, single-origin herbs sourced directly from high-integrity smallholder farmers and processed dynamically under steam-sterilization in California within weeks of harvest.</p>
+                </div>
+                <div class="arch-card">
+                    <div class="arch-icon">&lt;03&gt;</div>
+                    <h4>Streamlined Instruction Sets</h4>
+                    <p>Our 5.5" x 8.5" printed recipe cards utilize chronological instructions mapping directly to numbered spice pouches (e.g. Step 1: The Bloom, Step 2: The Build, Step 3: The Finish) for absolute culinary precision.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subscription Pricing Terminal -->
+        <section class="pricing border-t">
+            <div class="container">
+                <div class="pricing-terminal-box">
+                    <div class="pricing-header">
+                        <span class="p-dot red"></span><span class="p-dot yellow"></span><span class="p-dot green"></span>
+                        <span class="p-title">SUBSCRIPTION_PLAN_MANIFEST</span>
+                    </div>
+                    <div class="pricing-body">
+                        <div class="pricing-columns">
+                            <div class="pricing-info">
+                                <h3>THE ROUTE_STARTER PLAN</h3>
+                                <p class="price-tag">$14.99 <span class="period">/ month</span></p>
+                                <p class="desc">Includes 3 curated international recipe boxes with exact dry-spice sachets + heavy-duty waterproof recipe card index. Perfect for busy couples and modern tech professionals.</p>
+                            </div>
+                            <div class="pricing-features">
+                                <ul>
+                                    <li>:: 3 Dynamic Global Recipes Per Month</li>
+                                    <li>:: Precision Pre-measured Spice Pouches</li>
+                                    <li>:: Single-Origin, Fresh-ground Organic Spices</li>
+                                    <li>:: Custom Splash-proof Culinary Cards</li>
+                                    <li>:: Zero-waste Compostable Packaging</li>
+                                    <li>:: Free Direct Mail Delivery to Continental US</li>
+                                </ul>
+                                <a href="#waitlist-form" class="cta-glowing-btn">JOIN_THE_WAITLIST_NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="container">
-        <div class="footer-content">
-            <p>&copy; 2026 ZestRoute. Sustainable flavor for modern kitchens.</p>
+    <footer class="border-t">
+        <div class="container footer-content">
+            <p>&copy; 2026 ZestRoute. All rights reserved. Built with absolute culinary precision.</p>
             <div class="footer-links">
-                <a href="#waitlist-form">Join Waitlist</a>
+                <span class="status-indicator online"></span>
+                <span>DB_CONNECTED: zestroute-waitlist-612</span>
             </div>
         </div>
     </footer>
