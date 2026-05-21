@@ -1,0 +1,11 @@
+{
+  "name": "zestroute-landing",
+  "version": "1.0.0",
+  "description": "ZestRoute DTC spice kit landing page",
+  "scripts": {
+    "start": "serve ."
+  },
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
